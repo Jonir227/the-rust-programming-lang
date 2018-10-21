@@ -8,3 +8,5 @@
 - Hello, Cargo!
 
 ## 2. Programming a Guessing Game
+
+## 3. Common Programming Concepts

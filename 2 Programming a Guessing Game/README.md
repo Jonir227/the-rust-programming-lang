@@ -32,3 +32,16 @@ rust 는 `let`키워드로 변수를 생성한다. 주의해야할 점은 생성
 let a = 1; // immutable
 let mut b = 2; // mutable
 ```
+
+## Result Type
+
+rust 는 standard library 에 `Result`라는 타입이 존재한다. 다양한 형태의 Result 가 존재하고 예제에서는 `io::Result`의 타입이 사용된다.
+
+- `Result`는 `enum`을 가지고 있다. `enum`은 고정된 값을 가지고 있으며 `Result`의 경우에는 `Ok`와 `Err`두가지로 이루어져 있다.
+- `Result`는 에러 핸들링에 사용된다. `Result`가 가지고 있는 `expect`로 이를 통제하는것이 가능한데, `Ok`의 경우에는 `Result`로 성공적으로 리턴된 값을 반환하고, 그렇지 않다면 `expect`에 정의된 문자열이 표시된다.
+
+## 패키지 추가
+
+Rust 에서 패키지는 크레이트라고 불린다.
+
+`Cargo.toml`파일에 원하는 크레이트 이름과 버전을 작성하고 `cargo build`를 돌리면 된다. 이후, 호환되는 범위 안에서 패키지를 업데이트 하려면 `cargo update`를 사용.
