@@ -10,3 +10,9 @@
 ## 2. Programming a Guessing Game
 
 ## 3. Common Programming Concepts
+
+- Variables and Constants
+- Data Types
+- How Functions Work
+- Comments
+- Control Flow
