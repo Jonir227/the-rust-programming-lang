@@ -1,12 +1,12 @@
 fn main() {
     // 피보나치
     let x = fibonacci(8);
-    println!("{}", x);
-    let k = fibonacci_loop(2);
-    println!("{}", k);
+    println!("피보나치 - {}", x);
+    let k = fibonacci_loop(6);
+    println!("피보나치 루프- {}", k);
     // 온도 변환
     let y = celscius_to_farenheit(36.5);
-    println!("{}", y);
+    println!("섭씨 to 화씨 - {}", y);
 }
 
 fn fibonacci(x: i32) -> i32 {
@@ -32,7 +32,6 @@ fn fibonacci_loop(x: i32) -> i32 {
         ans = tmp1 + tmp2;
         tmp1 = tmp2;
         tmp2 = ans;
-        println!("ans: {}, tmp: {}", tmp1, tmp2);
     }
     ans
 }
