@@ -1,8 +1,8 @@
 extern crate rand; // 외부 crate를 불러옴.
 
-use std::io; // io 라이브러리를 스코프에 가져옴.
-use std::cmp::Ordering; // Ordering Enum을 가져옴.
 use rand::Rng; // 랜덤 라이브러리를 호출
+use std::cmp::Ordering; // Ordering Enum을 가져옴.
+use std::io; // io 라이브러리를 스코프에 가져옴.
 
 // main은 프로그램의 엔트리 포인트로 사용된다.
 fn main() {
